@@ -142,7 +142,7 @@ VOLUME "${DATADIR}"
 
 WORKDIR "${BASEDIR}"
 
-HEALTHCHECK --interval=5m --timeout=1m --start-period=2m CMD python3 /opt/PhantomBot/config/healthcheck/healthcheck.py --show-success --config-dir /opt/PhantomBot_data/config/
+# HEALTHCHECK --interval=5m --timeout=1m --start-period=2m CMD python3 /opt/PhantomBot/config/healthcheck/healthcheck.py --show-success --config-dir /opt/PhantomBot_data/config/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
