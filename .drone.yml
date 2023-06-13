@@ -12,7 +12,7 @@ steps:
       password:
         from_secret: DOCKER_PASS
       build_args:
-        - PROJECT_VERSION="custom"
+        - PROJECT_VERSION=custom
       repo: bonny1992/phantombot
       tags: latest
       platforms:
@@ -26,7 +26,7 @@ steps:
       password:
         from_secret: QUAY_PASS
       build_args:
-        - PROJECT_VERSION="custom"
+        - PROJECT_VERSION=custom
       registry: quay.io
       repo: quay.io/bonny1992/phantombot
       tags: latest
@@ -41,7 +41,7 @@ steps:
       password:
         from_secret: GITHUB_TOKEN
       build_args:
-        - PROJECT_VERSION="custom"
+        - PROJECT_VERSION=custom
       registry: ghcr.io
       repo: ghcr.io/bonny1992/phantombot
       tags: latest
